@@ -1,0 +1,5 @@
+public interface Path{
+  public static Path get(String first) {
+    return FileSystems.getDefault().getPath(first);
+  }
+}
