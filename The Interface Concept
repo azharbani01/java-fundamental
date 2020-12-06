@@ -1,0 +1,8 @@
+public interface Comparable {
+    int compareTo(Object other);
+}
+
+public int compareTo(Object otherObject){
+    Employee other = (Employee) otherObject;
+    return Double.compare(salary, other.salary);
+}
